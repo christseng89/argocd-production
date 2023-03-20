@@ -16,7 +16,10 @@ spec:
         image:
           tag: 2.9.17
         ingress:
-          host: devops-toolkit.127.0.0.1.nip.io:3180
+          host: devops-toolkit.127.0.0.1.nip.io
+          ports:
+            http: 3180
+            https: 443
       version: v3
   destination:
     namespace: production
