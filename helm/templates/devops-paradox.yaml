@@ -16,7 +16,10 @@ spec:
         image:
           tag: latest
         ingress:
-          host: devopsparadox.com
+          host: devopsparadox.127.0.0.1.nip.io
+          ports:
+            http: 3280
+            https: 443          
       version: v3
   destination:
     namespace: production
